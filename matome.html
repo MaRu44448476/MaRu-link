@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaRu Link - Future Portal</title>
+    <link rel="stylesheet" href="matome-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="profile">
+            <div class="profile-image-container">
+                <img src="https://i.imgur.com/z1Em21O.jpg" alt="プロフィール画像" class="profile-image">
+                <div class="profile-status"></div>
+            </div>
+            <h1 class="profile-name">MaRu</h1>
+            <p class="profile-description">コンテンツクリエイター・ブロガー</p>
+            <div class="profile-stats">
+                <div class="stat">
+                    <span class="stat-number">1.2K</span>
+                    <span class="stat-label">フォロワー</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">投稿</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="newsletter-section">
+            <h2>📧 メルマガ登録</h2>
+            <p>最新情報をお届けします</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="メールアドレス" required>
+                <button type="submit">登録</button>
+            </form>
+        </section>
+
+        <section class="content-channels">
+            <h2>📺 コンテンツチャンネル</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <h3>ブログ</h3>
+                    <p>最新記事をチェック</p>
+                    <a href="#" class="card-link">見る →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎙️</div>
+                    <h3>ポッドキャスト</h3>
+                    <p>音声コンテンツ</p>
+                    <a href="#" class="card-link">聞く →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📻</div>
+                    <h3>ラジオ</h3>
+                    <p>ライブ配信</p>
+                    <a href="#" class="card-link">視聴 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>本要約ラジオ</h3>
+                    <p>書籍の要約配信</p>
+                    <a href="#" class="card-link">聞く →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>🎯 プロジェクト</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎬</div>
+                    <h3>アニメ公式サイト</h3>
+                    <p>最新情報をチェック</p>
+                    <a href="#" class="card-link">見る →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📺</div>
+                    <h3>Prime Video</h3>
+                    <p>動画配信中</p>
+                    <a href="#" class="card-link">視聴 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>モバイルサービス</h3>
+                    <p>アプリをダウンロード</p>
+                    <a href="#" class="card-link">ダウンロード →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🃏</div>
+                    <h3>トレーディングカード</h3>
+                    <p>カードゲーム</p>
+                    <a href="#" class="card-link">プレイ →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <h3>Discordコミュニティ</h3>
+                    <p>コミュニティに参加</p>
+                    <a href="#" class="card-link">参加 →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" class="footer-link">プライバシーポリシー</a>
+                <a href="#" class="footer-link">利用規約</a>
+                <a href="#" class="footer-link">お問い合わせ</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                <a href="#" class="social-link" aria-label="Discord">💬</a>
+            </div>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Newsletter form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.querySelector('.newsletter-form');
+            const emailInput = newsletterForm.querySelector('input[type="email"]');
+            const submitButton = newsletterForm.querySelector('button');
+
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = emailInput.value.trim();
+                if (!email) {
+                    alert('メールアドレスを入力してください。');
+                    return;
+                }
+
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('正しいメールアドレスを入力してください。');
+                    return;
+                }
+
+                // Disable button and show loading state
+                submitButton.textContent = '登録中...';
+                submitButton.disabled = true;
+
+                // Simulate API call
+                setTimeout(() => {
+                    alert('メルマガ登録が完了しました！');
+                    emailInput.value = '';
+                    submitButton.textContent = '登録';
+                    submitButton.disabled = false;
+                }, 1500);
+            });
+
+            // Add smooth animations to cards
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all cards
+            document.querySelectorAll('.card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+
+            // Add click tracking for cards
+            document.querySelectorAll('.card-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const cardTitle = this.closest('.card').querySelector('h3').textContent;
+                    console.log(`Clicked on: ${cardTitle}`);
+                    // Here you could add analytics tracking
+                    alert(`${cardTitle}のページに移動します（デモ）`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
