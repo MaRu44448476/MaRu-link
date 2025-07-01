@@ -30,11 +30,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
     
-    <!-- Preload Critical Resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+    <!-- Using system fonts for better performance and consistency -->
     
     <link rel="stylesheet" href="matome-style.css">
     
@@ -60,6 +56,18 @@
     </script>
 </head>
 <body>
+    <div class="panda-container">
+        <div class="panda panda1">🐼</div>
+        <div class="panda panda2">🐼</div>
+        <div class="panda panda3">🐼</div>
+        <div class="panda panda4">🐼</div>
+        <div class="panda panda5">🐼</div>
+        <div class="panda panda6">🐼</div>
+        <div class="panda panda7">🐼</div>
+        <div class="panda panda8">🐼</div>
+        <div class="panda panda9">🐼</div>
+        <div class="panda panda10">🐼</div>
+    </div>
     <header class="header" role="banner">
         <div class="profile" itemscope itemtype="https://schema.org/Person">
             <div class="profile-image-container">
@@ -91,10 +99,8 @@
 
         <section class="content-channels" aria-labelledby="content-title">
             <article class="parent-card">
-                <div class="card-icon" aria-hidden="true">📺</div>
                 <div class="card-content">
                     <h2>コンテンツチャンネル</h2>
-                    <p>ブログ、ポッドキャスト、ラジオなど</p>
                 </div>
             </article>
             <div class="card-grid" role="group" aria-label="コンテンツチャンネル一覧">
@@ -131,10 +137,8 @@
 
         <section class="project-section" aria-labelledby="project-title">
             <article class="parent-card">
-                <div class="card-icon" aria-hidden="true">🎯</div>
                 <div class="card-content">
                     <h2>プロジェクト</h2>
-                    <p>アニメ、ゲーム、コミュニティなど</p>
                 </div>
             </article>
             <div class="card-grid" role="group" aria-label="プロジェクト一覧">
