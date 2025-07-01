@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="MaRu Link - コンテンツクリエイター">
     <meta property="og:description" content="MaRuのコンテンツハブ。ブログ、ポッドキャスト、ラジオ、プロジェクトへのリンク集。">
-    <meta property="og:image" content="https://i.imgur.com/z1Em21O.jpg">
+    <meta property="og:image" content="images/og-image.svg">
     <meta property="og:url" content="https://maru44448476.github.io/MaRu-link/matome.html">
     <meta property="og:site_name" content="MaRu Link">
     <meta property="og:locale" content="ja_JP">
@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MaRu Link - コンテンツクリエイター">
     <meta name="twitter:description" content="MaRuのコンテンツハブ。ブログ、ポッドキャスト、ラジオ、プロジェクトへのリンク集。">
-    <meta name="twitter:image" content="https://i.imgur.com/z1Em21O.jpg">
+    <meta name="twitter:image" content="images/og-image.svg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
@@ -47,7 +47,7 @@
         "jobTitle": "コンテンツクリエイター・ブロガー",
         "description": "ブログ、ポッドキャスト、ラジオなどのコンテンツを制作するクリエイター",
         "url": "https://maru44448476.github.io/MaRu-link/matome.html",
-        "image": "https://i.imgur.com/z1Em21O.jpg",
+        "image": "images/profile-placeholder.jpg",
         "sameAs": [
             "https://github.com/MaRu44448476"
         ],
@@ -63,7 +63,7 @@
     <header class="header" role="banner">
         <div class="profile" itemscope itemtype="https://schema.org/Person">
             <div class="profile-image-container">
-                <img src="https://i.imgur.com/z1Em21O.jpg" 
+                <img src="images/profile-placeholder.jpg" 
                      alt="MaRuのプロフィール写真" 
                      class="profile-image"
                      itemprop="image"
@@ -88,85 +88,90 @@
     </header>
 
     <main class="main" role="main">
-        <section class="newsletter-section" aria-labelledby="newsletter-title">
-            <h2 id="newsletter-title">📧 メルマガ登録</h2>
-            <p>最新情報をお届けします</p>
-            <form class="newsletter-form" aria-label="メルマガ登録フォーム">
-                <label for="email-input" class="visually-hidden">メールアドレス</label>
-                <input 
-                    type="email" 
-                    id="email-input"
-                    placeholder="メールアドレス" 
-                    required 
-                    autocomplete="email"
-                    aria-describedby="email-description">
-                <div id="email-description" class="visually-hidden">メールアドレスを入力してメルマガに登録</div>
-                <button type="submit" aria-label="メルマガに登録">登録</button>
-            </form>
-        </section>
 
         <section class="content-channels" aria-labelledby="content-title">
-            <h2 id="content-title">📺 コンテンツチャンネル</h2>
+            <article class="parent-card">
+                <div class="card-icon" aria-hidden="true">📺</div>
+                <div class="card-content">
+                    <h2>コンテンツチャンネル</h2>
+                    <p>ブログ、ポッドキャスト、ラジオなど</p>
+                </div>
+            </article>
             <div class="card-grid" role="group" aria-label="コンテンツチャンネル一覧">
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">📝</div>
-                    <h3>ブログ</h3>
-                    <p>最新記事をチェック</p>
-                    <a href="#" class="card-link" aria-label="ブログを見る">見る →</a>
+                    <div class="card-content">
+                        <h3>ブログ</h3>
+                        <p>最新記事をチェック</p>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">🎙️</div>
-                    <h3>ポッドキャスト</h3>
-                    <p>音声コンテンツ</p>
-                    <a href="#" class="card-link" aria-label="ポッドキャストを聞く">聞く →</a>
+                    <div class="card-content">
+                        <h3>ポッドキャスト</h3>
+                        <p>音声コンテンツ</p>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">📻</div>
-                    <h3>ラジオ</h3>
-                    <p>ライブ配信</p>
-                    <a href="#" class="card-link" aria-label="ラジオを視聴">視聴 →</a>
+                    <div class="card-content">
+                        <h3>ラジオ</h3>
+                        <p>ライブ配信</p>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">📚</div>
-                    <h3>本要約ラジオ</h3>
-                    <p>書籍の要約配信</p>
-                    <a href="#" class="card-link" aria-label="本要約ラジオを聞く">聞く →</a>
+                    <div class="card-content">
+                        <h3>本要約ラジオ</h3>
+                        <p>書籍の要約配信</p>
+                    </div>
                 </article>
             </div>
         </section>
 
         <section class="project-section" aria-labelledby="project-title">
-            <h2 id="project-title">🎯 プロジェクト</h2>
+            <article class="parent-card">
+                <div class="card-icon" aria-hidden="true">🎯</div>
+                <div class="card-content">
+                    <h2>プロジェクト</h2>
+                    <p>アニメ、ゲーム、コミュニティなど</p>
+                </div>
+            </article>
             <div class="card-grid" role="group" aria-label="プロジェクト一覧">
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">🎬</div>
-                    <h3>アニメ公式サイト</h3>
-                    <p>最新情報をチェック</p>
-                    <a href="#" class="card-link" aria-label="アニメ公式サイトを見る">見る →</a>
+                    <div class="card-content">
+                        <h3>アニメ公式サイト</h3>
+                        <p>最新情報をチェック</p>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">📺</div>
-                    <h3>Prime Video</h3>
-                    <p>動画配信中</p>
-                    <a href="#" class="card-link" aria-label="Prime Videoを視聴">視聴 →</a>
+                    <div class="card-content">
+                        <h3>Prime Video</h3>
+                        <p>動画配信中</p>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">📱</div>
-                    <h3>モバイルサービス</h3>
-                    <p>アプリをダウンロード</p>
-                    <a href="#" class="card-link" aria-label="モバイルアプリをダウンロード">ダウンロード →</a>
+                    <div class="card-content">
+                        <h3>モバイルサービス</h3>
+                        <p>アプリをダウンロード</p>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">🃏</div>
-                    <h3>トレーディングカード</h3>
-                    <p>カードゲーム</p>
-                    <a href="#" class="card-link" aria-label="トレーディングカードをプレイ">プレイ →</a>
+                    <div class="card-content">
+                        <h3>トレーディングカード</h3>
+                        <p>カードゲーム</p>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">💬</div>
-                    <h3>Discordコミュニティ</h3>
-                    <p>コミュニティに参加</p>
-                    <a href="#" class="card-link" aria-label="Discordコミュニティに参加">参加 →</a>
+                    <div class="card-content">
+                        <h3>Discordコミュニティ</h3>
+                        <p>コミュニティに参加</p>
+                    </div>
                 </article>
             </div>
         </section>
